@@ -15,7 +15,7 @@ import seaborn as sns
 
 # Point this at the real dataset once it's downloaded, e.g.:
 # df = pd.read_csv("data/raw/Mall_Customers.csv")
-df = pd.read_csv("data/raw/customers_sample.csv")
+df = pd.read_csv("data/raw/Mall_Customers.csv")
 
 print("Shape (rows, columns):", df.shape)
 print("\nColumn info:")
