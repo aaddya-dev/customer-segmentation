@@ -1,7 +1,7 @@
 """
 segmentation.py
 
-Loads customers.csv, cleans it, runs K-Means clustering to find
+Loads customers_sample.csv, cleans it, runs K-Means clustering to find
 customer segments, labels them, and saves a chart + labeled CSV.
 
 Run it with:
@@ -19,7 +19,7 @@ from sklearn.preprocessing import StandardScaler
 import matplotlib.pyplot as plt
 
 # ---------- 1. Load the data ----------
-df = pd.read_csv("customers.csv")
+df = pd.read_csv("data/raw/customers_sample.csv")
 print(f"Loaded {len(df)} customers")
 print(df.describe())  # quick sanity check: min/max/avg of each column
 
