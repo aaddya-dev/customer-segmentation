@@ -5,7 +5,7 @@ Loads customers.csv, cleans it, runs K-Means clustering to find
 customer segments, labels them, and saves a chart + labeled CSV.
 
 Run it with:
-    python segmentation.py
+    python notebooks/segmentation.py
 
 Compared to Java/C++: there are no classes or type declarations
 required here. Python infers types automatically, and most "data
