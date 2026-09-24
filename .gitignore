@@ -1,0 +1,15 @@
+# Generated segmentation files accidentally created at project root
+/customers_segmented.csv
+/elbow_plot.png
+/segments_plot.png
+
+# Python-generated cache files
+__pycache__/
+*.pyc
+
+# Local Python environments
+.venv/
+venv/
+
+# Private Streamlit settings
+.streamlit/secrets.toml
