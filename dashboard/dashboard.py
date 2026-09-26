@@ -513,7 +513,7 @@ def reset_sidebar_filters():
 
 st.sidebar.button(
     "↻ Reset All Filters",
-    use_container_width=True,
+    width="stretch",
     on_click=reset_sidebar_filters
 )
 
@@ -576,7 +576,7 @@ with summary_tab:
 
     st.dataframe(
         segment_summary,
-        use_container_width=True,
+        width="stretch",
         hide_index=True
     )
 
@@ -703,7 +703,7 @@ with data_tab:
 
     st.dataframe(
         display_data,
-        use_container_width=True,
+        width="stretch",
         hide_index=True,
         height=500
     )
@@ -771,7 +771,7 @@ with charts_tab:
         for text in legend.get_texts():
             text.set_color("#FFFFFF")
 
-        st.pyplot(scatter_figure, use_container_width=True)
+        st.pyplot(scatter_figure, width="stretch")
         plt.close(scatter_figure)
 
     with distribution_column:
@@ -835,7 +835,7 @@ with charts_tab:
 
         st.pyplot(
             distribution_figure,
-            use_container_width=True
+            width="stretch"
         )
 
         plt.close(distribution_figure)
