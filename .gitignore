@@ -13,3 +13,5 @@ venv/
 
 # Private Streamlit settings
 .streamlit/secrets.toml
+/data/processed/elbow_plot.png
+/data/processed/segments_plot.png

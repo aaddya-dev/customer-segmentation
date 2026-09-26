@@ -55,8 +55,8 @@ plt.plot(list(k_range), inertias, marker="o")
 plt.xlabel("Number of clusters (k)")
 plt.ylabel("Inertia (lower = tighter clusters)")
 plt.title("Elbow method: pick k where the curve bends")
-plt.savefig("elbow_plot.png", dpi=120, bbox_inches="tight")
-print("Saved elbow_plot.png -- look for where the line stops dropping sharply")
+plt.savefig("data/processed/elbow_plot.png", dpi=120, bbox_inches="tight")
+print("Saved data/processed/elbow_plot.png -- look for where the line stops dropping sharply")
 
 # ---------- 5. Run K-Means with a chosen k ----------
 # Based on how we built the synthetic data, 3 is a natural choice.
@@ -84,8 +84,8 @@ print("\nCustomers per segment:")
 print(df["segment"].value_counts())
 
 # ---------- 7. Save results ----------
-df.to_csv("customers_segmented.csv", index=False)
-print("\nSaved customers_segmented.csv with segment labels")
+df.to_csv("data/processed/customers_segmented.csv", index=False)
+print("\nSaved data/processed/customers_segmented.csv with segment labels")
 
 # ---------- 8. Visualize the segments ----------
 plt.figure(figsize=(7, 5))
@@ -96,5 +96,5 @@ plt.xlabel("Annual Income")
 plt.ylabel("Spending Score")
 plt.title("Customer Segments")
 plt.legend()
-plt.savefig("segments_plot.png", dpi=120, bbox_inches="tight")
-print("Saved segments_plot.png")
+plt.savefig("data/processed/segments_plot.png", dpi=120, bbox_inches="tight")
+print("Saved data/processed/segments_plot.png")
