@@ -4,7 +4,7 @@ dashboard.py
 An interactive dashboard for exploring customer segments.
 
 Run it with:
-    streamlit run dashboard.py
+    python -m streamlit run dashboard/dashboard.py
 
 This will open a page in your browser. Streamlit re-runs this whole
 script top-to-bottom every time you interact with something (like a
