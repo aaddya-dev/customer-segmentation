@@ -304,8 +304,6 @@ processed_data_path = (
     / "customers_segmented.csv"
 )
 
-legacy_data_path = project_root / "customers_segmented.csv"
-
 st.sidebar.markdown(
     """
     <div class="upload-guide">
@@ -333,18 +331,14 @@ try:
         data_source_class = "uploaded"
 
     else:
-        if processed_data_path.exists():
-            demo_path = processed_data_path
-        elif legacy_data_path.exists():
-            demo_path = legacy_data_path
-        else:
+        if not processed_data_path.exists():
             st.error(
                 "No demo dataset was found. Run the segmentation "
                 "script or upload a segmented CSV file."
             )
             st.stop()
 
-        df = pd.read_csv(demo_path)
+        df = pd.read_csv(processed_data_path)
         data_source_status = "● Sample data is currently being shown"
         data_source_class = "demo"
 
